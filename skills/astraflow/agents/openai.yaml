@@ -1,0 +1,5 @@
+interface:
+  display_name: "AstraFlow"
+  short_description: "Turn rough product ideas into PRD, design, implementation, QA, and deployment workflow"
+  default_prompt: "Use AstraFlow on this project. I have a rough product idea, but I do not know how to write the prompt."
+

@@ -158,6 +158,8 @@ If a running Codex session does not notice the newly installed skill, start a ne
 Use the astraflow-project-delivery skill on this project.
 ```
 
+If the agent still says it will look for AstraFlow tools and then stops, copy the fallback block from [docs/09-skill-fallback-instructions.md](docs/09-skill-fallback-instructions.md) into the target project's `AGENTS.md`.
+
 The skill will guide Codex through product planning, PRD, design system, Figma/image handoff, implementation contract, Superpowers handoff when appropriate, visual QA, deployment readiness, and self-evolution.
 
 ## Self-Evolution
@@ -231,6 +233,7 @@ AstraFlow is for:
 │   ├── 06-positioning-vs-superpowers.md
 │   ├── 07-self-evolution.md
 │   ├── 08-full-loop-with-superpowers.md
+│   ├── 09-skill-fallback-instructions.md
 │   └── evolution/
 ├── prompts/
 │   ├── design-prompt-assistant.md

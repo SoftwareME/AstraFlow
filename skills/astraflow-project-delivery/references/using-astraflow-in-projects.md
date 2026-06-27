@@ -6,8 +6,11 @@ Use AstraFlow as:
 
 1. **Project template**: copy the AstraFlow files into a product repository.
 2. **Skill**: install `skills/astraflow-project-delivery` so Codex can apply the workflow in any repository.
+3. **Fallback instruction**: if skill discovery fails, copy `docs/09-skill-fallback-instructions.md` into the target project's `AGENTS.md`.
 
 The best setup is both: install the skill globally, then add AstraFlow project files to each serious product repo.
+
+For better trigger reliability, also install the short alias skill `skills/astraflow`.
 
 ## Minimal Project Files
 
@@ -100,4 +103,3 @@ Do not claim completion until evidence covers:
 - tests or justified test gaps
 - deployment readiness
 - self-evolution record if the task exposed a durable lesson
-
