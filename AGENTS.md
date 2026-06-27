@@ -12,6 +12,8 @@ Before making product, design, or code changes, read these files in order:
 4. `docs/03-design-system.md`
 5. `docs/04-ai-workflow.md`
 6. `docs/05-quality-gates.md`
+7. `docs/06-positioning-vs-superpowers.md`
+8. `docs/07-self-evolution.md`
 
 If a task touches Figma, image generation, visual assets, or UI implementation, also read:
 
@@ -29,6 +31,7 @@ If a task touches Figma, image generation, visual assets, or UI implementation, 
 - Preserve existing business logic unless the user explicitly asks to change it.
 - Use realistic content, data density, states, and domain labels.
 - Verify UI at desktop, tablet, and mobile breakpoints before final delivery.
+- When a repeated failure, unclear prompt, visual defect, or process gap is discovered, update the relevant durable artifact and record the change in `docs/evolution/ledger.md`.
 
 ## UI Quality Rules
 
@@ -50,3 +53,20 @@ Every completed implementation should report:
 - Which visual breakpoints were inspected
 - Remaining risks or manual follow-ups
 
+## Self-Evolution Rule
+
+Fixing the current output is not enough when the project reveals a recurring weakness.
+
+If the task exposes a durable lesson, update at least one of:
+
+- `docs/02-prd.md`
+- `docs/03-design-system.md`
+- `docs/05-quality-gates.md`
+- `docs/07-self-evolution.md`
+- `prompts/`
+- `figma/figma-handoff.md`
+- `assets/asset-pipeline.md`
+- `qa/`
+- `deploy/`
+
+Then record the reason in `docs/evolution/ledger.md`.

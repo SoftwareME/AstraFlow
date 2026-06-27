@@ -81,6 +81,38 @@ AstraFlow gives every AI agent a read order and source of truth. Before changing
 
 AstraFlow includes testing, visual QA, asset management, and deployment checklists from the beginning.
 
+## AstraFlow vs Superpowers
+
+[obra/superpowers](https://github.com/obra/superpowers) is a strong software-development methodology for coding agents. It focuses on skills such as brainstorming, planning, test-driven development, subagent-driven development, code review, debugging, and verification before completion.
+
+AstraFlow is different: it is an AI-native product delivery system.
+
+Superpowers improves how an AI coding agent works. AstraFlow improves how an AI-native product project is structured from idea to design, Figma, frontend, QA, and deployment.
+
+Use them together when you want both:
+
+- Superpowers for engineering discipline inside the coding agent
+- AstraFlow for product, design, visual QA, assets, Figma handoff, and deployment structure
+
+Read the full comparison: [docs/06-positioning-vs-superpowers.md](docs/06-positioning-vs-superpowers.md)
+
+## Self-Evolution
+
+AstraFlow is designed to improve itself over time.
+
+Every repeated failure should become a durable project artifact:
+
+- a stronger prompt
+- a clearer product requirement
+- a tighter design rule
+- a better visual QA check
+- a Figma handoff rule
+- an asset pipeline constraint
+- a test
+- a deployment checklist item
+
+The self-evolution loop is documented in [docs/07-self-evolution.md](docs/07-self-evolution.md), and changes are recorded in [docs/evolution/ledger.md](docs/evolution/ledger.md).
+
 ## Key Advantages
 
 - **AI-first project structure**: Built for Codex, Cursor, Claude Code, Copilot, and other AI coding agents.
@@ -131,7 +163,10 @@ AstraFlow is for:
 │   ├── 02-prd.md
 │   ├── 03-design-system.md
 │   ├── 04-ai-workflow.md
-│   └── 05-quality-gates.md
+│   ├── 05-quality-gates.md
+│   ├── 06-positioning-vs-superpowers.md
+│   ├── 07-self-evolution.md
+│   └── evolution/
 ├── prompts/
 │   ├── design-prompt-assistant.md
 │   ├── product-planning.md
