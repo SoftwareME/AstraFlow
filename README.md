@@ -195,10 +195,6 @@ AstraFlow is for:
 - developers who want AI output to be more reliable
 - teams turning Figma, screenshots, and product ideas into real software
 
-## Example Project
-
-See [examples/enterprise-ai-os](examples/enterprise-ai-os) for a worked AstraFlow example based on an AI-native company operating system with strategy, organization, agent talent pools, token incentives, finance, and project dispatch.
-
 ## How It Works
 
 ```text
