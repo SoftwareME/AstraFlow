@@ -4,6 +4,22 @@
 
 `idea -> PRD -> design direction -> design system -> AI visuals -> Figma handoff -> frontend -> visual QA -> tests -> fixes -> deployment`
 
+## Quickstart
+
+Give your project AstraFlow:
+[Codex App](#codex-app),
+[Codex CLI](#codex-cli),
+[Claude Code](#claude-code),
+[Cursor](#cursor),
+[Gemini CLI](#gemini-cli),
+[GitHub Copilot CLI](#github-copilot-cli),
+[Kimi Code](#kimi-code),
+[OpenCode](#opencode),
+[Figma](#figma),
+[Superpowers](#superpowers-integration).
+
+Start with the [Core Prompt](#the-core-prompt), then let AstraFlow turn your idea into a PRD, design system, Figma-ready handoff, frontend implementation, visual QA, tests, fixes, and deployment readiness.
+
 ![AstraFlow and Superpowers full-loop workflow](assets/diagrams/astraflow-superpowers-loop.svg)
 
 Most AI coding projects fail for the same reason: the AI is asked to build from a vague prompt, without stable product context, design rules, acceptance criteria, or quality gates.
@@ -210,6 +226,52 @@ If anything is unclear, give me 3 options instead of asking me to write a perfec
 
 5. Choose one design direction.
 6. Let the AI continue through implementation and QA.
+
+### Codex App
+
+Open this repository in Codex App and ask:
+
+```text
+Read AGENTS.md and use AstraFlow to turn my idea into a product brief, PRD, design system, implementation contract, visual QA plan, and deployment checklist.
+```
+
+### Codex CLI
+
+Run Codex from the repository root and start with the core prompt below. AstraFlow's `AGENTS.md` tells the agent what project context to read first.
+
+### Claude Code
+
+Open the repository in Claude Code and tell it to follow `AGENTS.md`, then use the AstraFlow docs as the project source of truth.
+
+### Cursor
+
+Open the repository in Cursor Agent and ask it to read `AGENTS.md` plus the `docs/` folder before changing code.
+
+### Gemini CLI
+
+Run Gemini CLI from the repository root and ask it to follow the AstraFlow workflow from `AGENTS.md`.
+
+### GitHub Copilot CLI
+
+Use the repository files as the source of truth, then ask Copilot CLI to generate plans or implementation changes from the PRD and design system.
+
+### Kimi Code
+
+Open the project in Kimi Code and ask it to follow the AstraFlow read order in `AGENTS.md`.
+
+### OpenCode
+
+Run OpenCode from the repository root and begin with the AstraFlow core prompt.
+
+### Figma
+
+Use `figma/figma-handoff.md` and `prompts/figma-generation.md` to create editable screens, components, variables, and handoff structure.
+
+### Superpowers Integration
+
+Use AstraFlow to define what good means, then use Superpowers as the engineering execution engine.
+
+Read the full loop: [docs/08-full-loop-with-superpowers.md](docs/08-full-loop-with-superpowers.md)
 
 ## The Core Prompt
 
