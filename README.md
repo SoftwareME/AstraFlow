@@ -152,6 +152,12 @@ Then ask Codex:
 Use AstraFlow on this project. I have a rough product idea, but I do not know how to write the prompt.
 ```
 
+If a running Codex session does not notice the newly installed skill, start a new session or explicitly invoke:
+
+```text
+Use the astraflow-project-delivery skill on this project.
+```
+
 The skill will guide Codex through product planning, PRD, design system, Figma/image handoff, implementation contract, Superpowers handoff when appropriate, visual QA, deployment readiness, and self-evolution.
 
 ## Self-Evolution

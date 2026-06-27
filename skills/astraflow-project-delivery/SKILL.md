@@ -1,6 +1,6 @@
 ---
 name: astraflow-project-delivery
-description: Use when a user wants AI to take a rough product idea, existing app, screenshot, Figma design, or vague UI request through product planning, PRD, design system, Figma/image asset handoff, frontend implementation, visual QA, tests, fixes, deployment readiness, or a full AI-native delivery workflow.
+description: Use when the user says AstraFlow, astraflow, "Use AstraFlow", "使用 AstraFlow", "我不会写提示词", or wants a rough product idea, existing app, screenshot, Figma design, vague UI request, or Chinese product concept turned into product planning, PRD, design system, Figma/image handoff, frontend implementation, visual QA, tests, deployment readiness, or a full AI-native delivery workflow. This is a skill workflow, not a tool lookup.
 ---
 
 # AstraFlow Project Delivery
@@ -18,6 +18,8 @@ Failures improve the workflow.
 
 ## First Move
 
+Do not search for an "AstraFlow tool" or wait after saying you will check for one. AstraFlow is a workflow skill. Once this skill is active, execute the workflow directly.
+
 If the project has AstraFlow files, read them in this order:
 
 1. `AGENTS.md`
@@ -28,7 +30,16 @@ If the project has AstraFlow files, read them in this order:
 6. `docs/04-ai-workflow.md`
 7. `docs/05-quality-gates.md`
 
-If files are missing, create the smallest useful version before continuing.
+If files are missing, create the smallest useful version before continuing. For a new project, create at least:
+
+- `AGENTS.md`
+- `docs/00-project-context.md`
+- `docs/01-product-brief.md`
+- `docs/02-prd.md`
+- `docs/03-design-system.md`
+- `docs/05-quality-gates.md`
+
+If the user gave a rough idea but did not explicitly ask for files, still produce the structured brief and 3 directions in the response, then ask them to choose one.
 
 ## Default Workflow
 
@@ -51,7 +62,7 @@ rough idea
 
 ## When The User Cannot Prompt Well
 
-Do not ask for a polished prompt. Offer 3 options:
+Do not ask for a polished prompt. Do not stop after promising to convert the idea. Offer 3 options:
 
 1. Conservative/professional
 2. Premium/product-led
@@ -117,4 +128,3 @@ Examples:
 - bad asset use -> update `assets/asset-pipeline.md`
 - missed regression -> update `qa/test-plan.md`
 - deploy failure -> update `deploy/deployment-checklist.md`
-
