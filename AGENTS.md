@@ -14,6 +14,7 @@ Before making product, design, or code changes, read these files in order:
 6. `docs/05-quality-gates.md`
 7. `docs/06-positioning-vs-superpowers.md`
 8. `docs/07-self-evolution.md`
+9. `docs/08-full-loop-with-superpowers.md`
 
 If a task touches Figma, image generation, visual assets, or UI implementation, also read:
 

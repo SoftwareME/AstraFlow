@@ -96,6 +96,8 @@ Use them together when you want both:
 
 Read the full comparison: [docs/06-positioning-vs-superpowers.md](docs/06-positioning-vs-superpowers.md)
 
+See the full integration loop: [docs/08-full-loop-with-superpowers.md](docs/08-full-loop-with-superpowers.md)
+
 ## Self-Evolution
 
 AstraFlow is designed to improve itself over time.
@@ -166,6 +168,7 @@ AstraFlow is for:
 │   ├── 05-quality-gates.md
 │   ├── 06-positioning-vs-superpowers.md
 │   ├── 07-self-evolution.md
+│   ├── 08-full-loop-with-superpowers.md
 │   └── evolution/
 ├── prompts/
 │   ├── design-prompt-assistant.md
