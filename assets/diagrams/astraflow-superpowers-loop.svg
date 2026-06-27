@@ -1,0 +1,183 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="980" viewBox="0 0 1440 980" role="img" aria-labelledby="title desc">
+  <title id="title">AstraFlow and Superpowers full-loop workflow</title>
+  <desc id="desc">A visual architecture diagram showing AstraFlow as the product delivery operating system and Superpowers as the coding-agent execution engine.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="55%" stop-color="#f4f7fb"/>
+      <stop offset="100%" stop-color="#eef7f3"/>
+    </linearGradient>
+    <linearGradient id="astra" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f766e"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="super" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#db2777"/>
+    </linearGradient>
+    <linearGradient id="gate" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ef4444"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="8" stdDeviation="9" flood-color="#0f172a" flood-opacity="0.13"/>
+    </filter>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#334155"/>
+    </marker>
+    <marker id="arrowAstra" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#0f766e"/>
+    </marker>
+    <marker id="arrowLoop" markerWidth="12" markerHeight="12" refX="9" refY="6" orient="auto">
+      <path d="M2,2 L10,6 L2,10 Z" fill="#ef4444"/>
+    </marker>
+    <style>
+      .title { font: 800 42px Arial, sans-serif; fill: #0f172a; }
+      .subtitle { font: 500 19px Arial, sans-serif; fill: #475569; }
+      .label { font: 700 20px Arial, sans-serif; fill: #0f172a; }
+      .small { font: 500 15px Arial, sans-serif; fill: #475569; }
+      .tiny { font: 600 13px Arial, sans-serif; fill: #64748b; }
+      .whiteTitle { font: 800 22px Arial, sans-serif; fill: #ffffff; }
+      .whiteSmall { font: 600 14px Arial, sans-serif; fill: #eaf4ff; }
+      .boxText { font: 700 16px Arial, sans-serif; fill: #1e293b; }
+      .boxSub { font: 500 13px Arial, sans-serif; fill: #64748b; }
+      .pillText { font: 800 13px Arial, sans-serif; fill: #ffffff; letter-spacing: 0.4px; }
+      .card { fill: #ffffff; stroke: #dbe3ee; stroke-width: 1.4; rx: 14; filter: url(#shadow); }
+      .mini { fill: #ffffff; stroke: #cbd5e1; stroke-width: 1.2; rx: 11; }
+      .line { fill: none; stroke: #334155; stroke-width: 2.2; marker-end: url(#arrow); }
+      .astraLine { fill: none; stroke: #0f766e; stroke-width: 2.4; marker-end: url(#arrowAstra); }
+      .loopLine { fill: none; stroke: #ef4444; stroke-width: 2.4; stroke-dasharray: 8 8; marker-end: url(#arrowLoop); }
+    </style>
+  </defs>
+
+  <rect width="1440" height="980" fill="url(#bg)"/>
+
+  <text x="720" y="70" text-anchor="middle" class="title">AstraFlow + Superpowers Full Loop</text>
+  <text x="720" y="106" text-anchor="middle" class="subtitle">Product delivery operating system + coding-agent execution engine</text>
+
+  <rect x="86" y="145" width="568" height="596" rx="26" fill="#ecfeff" stroke="#99f6e4" stroke-width="2"/>
+  <rect x="786" y="145" width="568" height="596" rx="26" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
+  <rect x="86" y="785" width="1268" height="120" rx="26" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+
+  <rect x="120" y="180" width="500" height="72" rx="18" fill="url(#astra)" filter="url(#shadow)"/>
+  <text x="370" y="211" text-anchor="middle" class="whiteTitle">AstraFlow</text>
+  <text x="370" y="235" text-anchor="middle" class="whiteSmall">Decides what good means</text>
+
+  <rect x="820" y="180" width="500" height="72" rx="18" fill="url(#super)" filter="url(#shadow)"/>
+  <text x="1070" y="211" text-anchor="middle" class="whiteTitle">Superpowers</text>
+  <text x="1070" y="235" text-anchor="middle" class="whiteSmall">Helps build it correctly</text>
+
+  <g id="astra-flow">
+    <rect x="128" y="292" width="205" height="76" class="mini"/>
+    <text x="230" y="324" text-anchor="middle" class="boxText">Product Context</text>
+    <text x="230" y="348" text-anchor="middle" class="boxSub">who, why, constraints</text>
+
+    <rect x="376" y="292" width="205" height="76" class="mini"/>
+    <text x="478" y="324" text-anchor="middle" class="boxText">PRD</text>
+    <text x="478" y="348" text-anchor="middle" class="boxSub">screens + acceptance</text>
+
+    <rect x="128" y="416" width="205" height="76" class="mini"/>
+    <text x="230" y="448" text-anchor="middle" class="boxText">3 Design Options</text>
+    <text x="230" y="472" text-anchor="middle" class="boxSub">user chooses direction</text>
+
+    <rect x="376" y="416" width="205" height="76" class="mini"/>
+    <text x="478" y="448" text-anchor="middle" class="boxText">Design System</text>
+    <text x="478" y="472" text-anchor="middle" class="boxSub">tokens + states</text>
+
+    <rect x="128" y="540" width="205" height="76" class="mini"/>
+    <text x="230" y="572" text-anchor="middle" class="boxText">AI Visuals</text>
+    <text x="230" y="596" text-anchor="middle" class="boxSub">references + assets</text>
+
+    <rect x="376" y="540" width="205" height="76" class="mini"/>
+    <text x="478" y="572" text-anchor="middle" class="boxText">Figma Handoff</text>
+    <text x="478" y="596" text-anchor="middle" class="boxSub">components + layout</text>
+
+    <rect x="220" y="650" width="270" height="68" rx="14" fill="#ffffff" stroke="#0f766e" stroke-width="2.2" filter="url(#shadow)"/>
+    <text x="355" y="680" text-anchor="middle" class="boxText">Implementation Contract</text>
+    <text x="355" y="704" text-anchor="middle" class="boxSub">PRD + design + quality gates</text>
+
+    <path d="M333 330 L376 330" class="astraLine"/>
+    <path d="M478 368 L478 416" class="astraLine"/>
+    <path d="M376 454 L333 454" class="astraLine"/>
+    <path d="M230 492 L230 540" class="astraLine"/>
+    <path d="M333 578 L376 578" class="astraLine"/>
+    <path d="M478 616 C478 636 450 650 420 662" class="astraLine"/>
+  </g>
+
+  <g id="superpowers-flow">
+    <rect x="828" y="292" width="205" height="76" class="mini"/>
+    <text x="930" y="324" text-anchor="middle" class="boxText">Plan</text>
+    <text x="930" y="348" text-anchor="middle" class="boxSub">engineering tasks</text>
+
+    <rect x="1076" y="292" width="205" height="76" class="mini"/>
+    <text x="1178" y="324" text-anchor="middle" class="boxText">Branch Discipline</text>
+    <text x="1178" y="348" text-anchor="middle" class="boxSub">worktree / isolation</text>
+
+    <rect x="828" y="416" width="205" height="76" class="mini"/>
+    <text x="930" y="448" text-anchor="middle" class="boxText">TDD</text>
+    <text x="930" y="472" text-anchor="middle" class="boxSub">red -> green -> refactor</text>
+
+    <rect x="1076" y="416" width="205" height="76" class="mini"/>
+    <text x="1178" y="448" text-anchor="middle" class="boxText">Subagents</text>
+    <text x="1178" y="472" text-anchor="middle" class="boxSub">execute + review</text>
+
+    <rect x="828" y="540" width="205" height="76" class="mini"/>
+    <text x="930" y="572" text-anchor="middle" class="boxText">Debug + Review</text>
+    <text x="930" y="596" text-anchor="middle" class="boxSub">fix root causes</text>
+
+    <rect x="1076" y="540" width="205" height="76" class="mini"/>
+    <text x="1178" y="572" text-anchor="middle" class="boxText">Verify</text>
+    <text x="1178" y="596" text-anchor="middle" class="boxSub">evidence before claims</text>
+
+    <path d="M1033 330 L1076 330" class="line"/>
+    <path d="M1178 368 L1178 416" class="line"/>
+    <path d="M1076 454 L1033 454" class="line"/>
+    <path d="M930 492 L930 540" class="line"/>
+    <path d="M1033 578 L1076 578" class="line"/>
+  </g>
+
+  <path d="M490 684 C650 684 700 330 828 330" class="line"/>
+  <rect x="610" y="468" width="220" height="54" rx="27" fill="#0f172a" filter="url(#shadow)"/>
+  <text x="720" y="500" text-anchor="middle" class="pillText">CALL SUPERPOWERS</text>
+
+  <path d="M1178 616 C1178 690 1010 712 875 712 C770 712 690 704 620 684" class="line"/>
+
+  <g id="qa-deploy">
+    <rect x="128" y="818" width="218" height="56" rx="13" fill="#ffffff" stroke="#f59e0b" stroke-width="1.7"/>
+    <text x="237" y="842" text-anchor="middle" class="boxText">Visual QA</text>
+    <text x="237" y="862" text-anchor="middle" class="boxSub">1440 / 1024 / 390</text>
+
+    <rect x="394" y="818" width="218" height="56" rx="13" fill="#ffffff" stroke="#f59e0b" stroke-width="1.7"/>
+    <text x="503" y="842" text-anchor="middle" class="boxText">Quality Gates</text>
+    <text x="503" y="862" text-anchor="middle" class="boxSub">no overlap or clipping</text>
+
+    <rect x="660" y="818" width="218" height="56" rx="13" fill="#ffffff" stroke="#f59e0b" stroke-width="1.7"/>
+    <text x="769" y="842" text-anchor="middle" class="boxText">Deploy</text>
+    <text x="769" y="862" text-anchor="middle" class="boxSub">preview + smoke test</text>
+
+    <rect x="926" y="818" width="218" height="56" rx="13" fill="#ffffff" stroke="#f59e0b" stroke-width="1.7"/>
+    <text x="1035" y="842" text-anchor="middle" class="boxText">Feedback</text>
+    <text x="1035" y="862" text-anchor="middle" class="boxSub">user + production signals</text>
+
+    <rect x="1192" y="818" width="126" height="56" rx="13" fill="url(#gate)" filter="url(#shadow)"/>
+    <text x="1255" y="842" text-anchor="middle" class="pillText">EVOLVE</text>
+    <text x="1255" y="862" text-anchor="middle" class="whiteSmall">ledger</text>
+
+    <path d="M346 846 L394 846" class="line"/>
+    <path d="M612 846 L660 846" class="line"/>
+    <path d="M878 846 L926 846" class="line"/>
+    <path d="M1144 846 L1192 846" class="line"/>
+  </g>
+
+  <path d="M1255 818 C1255 760 1320 724 1320 650 C1320 410 1190 250 1070 252" class="loopLine"/>
+  <path d="M1255 818 C1220 740 920 735 720 735 C565 735 430 727 355 718" class="loopLine"/>
+
+  <g id="legend">
+    <rect x="354" y="922" width="360" height="38" rx="19" fill="#ffffff" stroke="#dbe3ee"/>
+    <circle cx="388" cy="941" r="7" fill="#0f766e"/>
+    <text x="404" y="946" class="tiny">AstraFlow owns product, design, QA, deploy</text>
+    <rect x="734" y="922" width="352" height="38" rx="19" fill="#ffffff" stroke="#dbe3ee"/>
+    <circle cx="768" cy="941" r="7" fill="#7c3aed"/>
+    <text x="784" y="946" class="tiny">Superpowers owns engineering execution</text>
+  </g>
+</svg>

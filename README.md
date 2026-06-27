@@ -4,6 +4,8 @@
 
 `idea -> PRD -> design direction -> design system -> AI visuals -> Figma handoff -> frontend -> visual QA -> tests -> fixes -> deployment`
 
+![AstraFlow and Superpowers full-loop workflow](assets/diagrams/astraflow-superpowers-loop.svg)
+
 Most AI coding projects fail for the same reason: the AI is asked to build from a vague prompt, without stable product context, design rules, acceptance criteria, or quality gates.
 
 AstraFlow fixes that.
