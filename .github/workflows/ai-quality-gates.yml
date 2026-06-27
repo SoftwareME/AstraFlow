@@ -1,0 +1,20 @@
+name: AI Quality Gates
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Project policy reminder
+        run: |
+          echo "Run project-specific lint, typecheck, tests, build, and visual QA here."
+          echo "This skeleton intentionally leaves commands for the chosen stack."
+
