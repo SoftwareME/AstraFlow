@@ -116,6 +116,44 @@ Read the full comparison: [docs/06-positioning-vs-superpowers.md](docs/06-positi
 
 See the full integration loop: [docs/08-full-loop-with-superpowers.md](docs/08-full-loop-with-superpowers.md)
 
+## Use In Real Projects
+
+AstraFlow has two practical modes:
+
+1. **Project template**: copy the AstraFlow files into a real product repository so agents have project context, PRD, design rules, QA gates, and deployment checks.
+2. **Codex skill**: install the bundled skill so Codex can apply the AstraFlow workflow in any repository.
+
+Best setup:
+
+```text
+Install the AstraFlow skill globally
++ add AstraFlow project files to each serious product repo
+= reusable AI workflow + durable project memory
+```
+
+### Install As A Skill
+
+This repository includes a reusable Codex skill:
+
+```text
+skills/astraflow-project-delivery
+```
+
+To use it locally, copy that folder into your Codex skills directory:
+
+```bash
+mkdir -p ~/.codex/skills
+cp -R skills/astraflow-project-delivery ~/.codex/skills/
+```
+
+Then ask Codex:
+
+```text
+Use AstraFlow on this project. I have a rough product idea, but I do not know how to write the prompt.
+```
+
+The skill will guide Codex through product planning, PRD, design system, Figma/image handoff, implementation contract, Superpowers handoff when appropriate, visual QA, deployment readiness, and self-evolution.
+
 ## Self-Evolution
 
 AstraFlow is designed to improve itself over time.
@@ -207,6 +245,8 @@ AstraFlow is for:
 ├── qa/
 │   ├── test-plan.md
 │   └── visual-regression.md
+├── skills/
+│   └── astraflow-project-delivery/
 └── deploy/
     └── deployment-checklist.md
 ```

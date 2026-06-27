@@ -1,0 +1,4 @@
+interface:
+  display_name: "AstraFlow"
+  short_description: "AI-native product delivery workflow"
+  default_prompt: "Use AstraFlow to turn this product idea into a PRD, design system, implementation contract, visual QA plan, and deployment-ready workflow."
